@@ -4,16 +4,25 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "Roboto", sans-serif;
   color: hsl(235, 18%, 26%);
 }
 
+.background {
+  background-color: hsl(234, 29%, 20%);
+  height: 100vh;
+  padding: 20px 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  width: 90%;
+  width: 70%;
   margin: 0 auto;
+   background-color: white;
+  border-radius: 15px;
 }
 
 .form {
