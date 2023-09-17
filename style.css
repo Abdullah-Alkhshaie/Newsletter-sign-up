@@ -109,6 +109,11 @@ form input:focus {
 }
 
 @media (max-width: 576px) {
+  .background {
+  background-color: white;
+  padding:  0;
+  display: block;             
+  }
   .container {
     grid-template-columns: 1fr;
   }
