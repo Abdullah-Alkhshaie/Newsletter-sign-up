@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: hsl(235, 18%, 26%);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 90%;
+  margin: 0 auto;
+}
+
+.form {
+  margin: 100px auto;
+  width: 80%;
+}
+
+.form .title {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.form .text {
+  margin: 30px 0;
+  text-align: left;
+}
+
+.form .updates {
+  margin-bottom: 30px;
+}
+.form .updates .update {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+.error {
+  border: 1px solid hsl(4, 100%, 67%);
+}
+
+form input {
+  width: 80%;
+  padding: 15px;
+  border-radius: 7px;
+  border: 1px solid #afacac;
+  margin: 5px 0;
+}
+form input:focus {
+  /* border: 1px solid #afacac; */
+  outline: 1px solid hsl(235, 18%, 26%);
+}
+
+.input-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.input-text p {
+  display: none;
+  margin-right: 100px;
+  color: hsl(4, 100%, 67%);
+}
+
+.btn button {
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  width: 80%;
+  padding: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 2px;
+}
+
+.btn button:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+
+.image {
+  margin-top: 20px;
+  background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 576px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .form {
+    display: grid;
+    order: 2;
+    margin: 20px auto 0;
+    width: 100%;
+  }
+
+  form input {
+    width: 100%;
+  }
+
+  .btn button {
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+  .image {
+    background-image: url(./assets/images/illustration-sign-up-mobile.svg);
+    background-repeat: no-repeat;
+    display: grid;
+    order: 1;
+    height: 285px;
+  }
+
+  .input-text h4 {
+    margin: 0;
+  }
+  .input-text p {
+    margin-right: 0;
+  }
+}
+
+.overlay {
+  background-color: hsl(234, 29%, 20%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay .succ-card {
+  background: white;
+  width: 400px;
+  height: 400px;
+  border-radius: 13px;
+  padding: 15px 30px;
+}
+.succ-card img {
+  width: 50px;
+}
+.succ-card .succ-title {
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.succ-card .succ-text {
+  /* font-size: 17px; */
+  line-height: 24px;
+  margin-bottom: 20px;
+}
+.succ-card .succ-text .vaild-email {
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+}
+
+.succ-card .dismiss {
+  background-color: hsl(235, 18%, 26%);
+  color: white;
+  border: none;
+  border-radius: 7px;
+  width: 100%;
+  padding: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 0.3s;
+  letter-spacing: 2px;
+}
+.succ-card .dismiss:hover {
+  background-color: hsl(4, 100%, 67%);
+}
+@media (max-width: 576px) {
+  .overlay {
+    background-color: white;
+  }
+
+  .succ-card .dismiss {
+    margin-top: 200px;
+  }
+}
