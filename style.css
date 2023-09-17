@@ -135,7 +135,7 @@ form input:focus {
   }
   .image {
     background-image: url(./assets/images/illustration-sign-up-mobile.svg);
-   background-size: cover;
+   background-size: contain;
     background-repeat: no-repeat;
     display: grid;
     order: 1;
