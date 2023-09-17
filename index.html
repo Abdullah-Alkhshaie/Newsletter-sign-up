@@ -22,71 +22,72 @@
     />
   </head>
   <body>
-    <!-- Sign-up form start -->
+   <div class="background">
+      <!-- Sign-up form start -->
+      <div class="container">
+        <div class="form">
+          <h1 class="title">Stay updated!</h1>
+          <p class="text">
+            Join 60,000+ product managers receiving monthly updates on:
+          </p>
+          <div class="updates">
+            <div class="update">
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <p>Product discovery and building what matters</p>
+            </div>
+            <div class="update">
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <p>Measuring to ensure updates are a success</p>
+            </div>
+            <div class="update">
+              <img src="./assets/images/icon-list.svg" alt="" />
+              <p>And much more!</p>
+            </div>
+          </div>
 
-    <div class="container">
-      <div class="form">
-        <h1 class="title">Stay updated!</h1>
-        <p class="text">
-          Join 60,000+ product managers receiving monthly updates on:
-        </p>
-        <div class="updates">
-          <div class="update">
-            <img src="./assets/images/icon-list.svg" alt="" />
-            <p>Product discovery and building what matters</p>
-          </div>
-          <div class="update">
-            <img src="./assets/images/icon-list.svg" alt="" />
-            <p>Measuring to ensure updates are a success</p>
-          </div>
-          <div class="update">
-            <img src="./assets/images/icon-list.svg" alt="" />
-            <p>And much more!</p>
+          <form action="">
+            <div class="input-text">
+              <h4>Email address</h4>
+              <p>Vaild email required</p>
+            </div>
+            <input
+              type="email"
+              name="email"
+              placeholder="email@company.com"
+              id="email-input"
+            />
+          </form>
+
+          <div class="btn">
+            <button>Subscribe to monthly newsletter</button>
           </div>
         </div>
-
-        <form action="">
-          <div class="input-text">
-            <h4>Email address</h4>
-            <p>Vaild email required</p>
-          </div>
-          <input
-            type="email"
-            name="email"
-            placeholder="email@company.com"
-            id="email-input"
-          />
-        </form>
-
-        <div class="btn">
-          <button>Subscribe to monthly newsletter</button>
+        <div class="image">
+          <!-- <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" /> -->
         </div>
       </div>
-      <div class="image">
-        <!-- <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" /> -->
+
+      <!-- Sign-up form end -->
+
+      <!-- Success message start -->
+
+      <div class="overlay">
+        <div class="succ-card">
+          <img src="./assets/images/icon-list.svg" alt="" />
+          <h1 class="succ-title">Thanks for subscribing!</h1>
+          <p class="succ-text">
+            A confirmation email has been sent to
+            <span class="vaild-email">ash@loremcompany.com</span>. Please open
+            it and click the button inside to confirm your subscription.
+          </p>
+          <button class="dismiss">Dismiss message</button>
+        </div>
       </div>
+
+      <!--   -->
+
+      <!-- Success message end -->
     </div>
-
-    <!-- Sign-up form end -->
-
-    <!-- Success message start -->
-
-    <div class="overlay">
-      <div class="succ-card">
-        <img src="./assets/images/icon-list.svg" alt="" />
-        <h1 class="succ-title">Thanks for subscribing!</h1>
-        <p class="succ-text">
-          A confirmation email has been sent to
-          <span class="vaild-email">ash@loremcompany.com</span>. Please open it
-          and click the button inside to confirm your subscription.
-        </p>
-        <button class="dismiss">Dismiss message</button>
-      </div>
-    </div>
-
-    <!--   -->
-
-    <!-- Success message end -->
 
     <script src="app.js"></script>
   </body>
